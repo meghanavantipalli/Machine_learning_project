@@ -22,16 +22,16 @@ For the waiter tip prediction model, the data was split into 80% training and 20
 From the coefficients, the time, sex, and smoker variables have the greatest impact on the predicted tip amount, with larger absolute values than the other variables. Specifically, a unit increase in time is associated with a decrease in the predicted tip amount, while being a male (sex = 0) and being a smoker (smoker = 1) are associated with an increase in the predicted tip amount, all else being equal.
 
 
-#### Libraries used:
-Import pandas as pd
-Import plotly.express as px
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import *
-from pyspark.sql.types import *
-from pyspark.ml.feature import StringIndexer,VectorAssembler
-from pyspark.ml import Pipeline
-from pyspark.ml.regression import LinearRegression
-from pyspark.ml.evaluation import RegressionEvaluator
+### Libraries used:
+* Import pandas as pd
+* Import plotly.express as px
+* from pyspark.sql import SparkSession
+* from pyspark.sql.functions import *
+* from pyspark.sql.types import *
+* from pyspark.ml.feature import StringIndexer,VectorAssembler
+* from pyspark.ml import Pipeline
+* from pyspark.ml.regression import LinearRegression
+* from pyspark.ml.evaluation import RegressionEvaluator
 
 
 
